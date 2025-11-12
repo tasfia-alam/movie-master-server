@@ -60,11 +60,7 @@ const client = new MongoClient(uri, {
 //       res.send(result);
 //     });
 
-//     app.delete("/movies/:id", async (req, res) => {
-//       const id = req.params.id;
-//       const result = await moviesCollection.deleteOne({ _id: new ObjectId(id) });
-//       res.send(result);
-//     });
+
 
 
 
