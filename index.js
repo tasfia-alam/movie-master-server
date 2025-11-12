@@ -20,49 +20,6 @@ const client = new MongoClient(uri, {
   }
 });
 
-// async function run() {
-//   try {
-//     await client.connect();
-//     console.log("✅ Connected to MongoDB!");
-
-//     const db = client.db("movie_master");
-//     const moviesCollection = db.collection("movies");
-
-//     // All routes inside run()
-//     app.get("/", (req, res) => {
-//       res.send("🎬 MovieMasterPro server is running!");
-//     });
-
-//     app.get("/movies", async (req, res) => {
-//       const result = await moviesCollection.find().toArray();
-//       res.send(result);
-//     });
-
-//     app.get("/movies/:id", async (req, res) => {
-//       const id = req.params.id;
-//       const result = await moviesCollection.findOne({ _id: new ObjectId(id) });
-//       res.send(result);
-//     });
-
-//     app.post("/movies", async (req, res) => {
-//       const newMovie = req.body;
-//       const result = await moviesCollection.insertOne(newMovie);
-//       res.send(result);
-//     });
-
-//     app.patch("/movies/:id", async (req, res) => {
-//       const id = req.params.id;
-//       const updated = req.body;
-//       const result = await moviesCollection.updateOne(
-//         { _id: new ObjectId(id) },
-//         { $set: updated }
-//       );
-//       res.send(result);
-//     });
-
-
-
-
 
 
 
