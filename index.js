@@ -92,7 +92,7 @@ async function run() {
           query.genre = { $in: genresArray };
         }
 
-        // Filter by rating range
+        // 
         if (minRating || maxRating) {
           query.rating = {};
           if (minRating) query.rating.$gte = parseFloat(minRating);
