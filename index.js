@@ -66,16 +66,7 @@ const client = new MongoClient(uri, {
 //       res.send(result);
 //     });
 
-//     // Server start here (inside try)
-//     app.listen(port, () => {
-//       console.log(`🚀 MovieMasterPro running on port ${port}`);
-//     });
-//   } catch (err) {
-//     console.error(err);
-//   }
-// }
 
-// run().catch(console.dir);
 
 
 
